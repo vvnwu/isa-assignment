@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Individual Assignment Database Quiz</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="../../../../../css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="content">
+     <!--nav-->
+    <nav id="nav" class="navbar sticky-top justify-content-end">
+        <a class="navbar-brand" href="../../index.html"><i class="fas fa-home"></i></a>
+    </nav>
+    <!--    list-->
+    <h1>Admin Panel</h1>
+    <h2 id="quiz-name"></h2>
+    <h3>Create a new question</h3>
+    <form id="new-question-form">
+        <div class="form-group row col-sm-10">
+            <input id="new-question-title" name="question" type="text" class="form-control" placeholder="New question">
+        </div>        
+        <div id="new-question-choices"></div>
+        <button id="new-choice-button" onsubmit="return false" class="btn btn-primary btn-sm">Add Choice</button>
+        <button id="new-question-button" onsubmit="return false" class="btn btn-primary btn-sm">Save</button>
+    </form>
+    <h3>Edit questions</h3>
+    <div id="questions-root" class="d-flex flex-column"></div>
+</div>
+<script src="../js/admin-quiz.js"></script>
+<!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+<script crossorigin="anonymous"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/629c863df8.js"></script>
+
+</body>
+</html>
